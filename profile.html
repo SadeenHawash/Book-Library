@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FableFolio</title>
+    <!---------------------- ICONS ------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.4.0/remixicon.css"
+    />
+    <!---------------------- SWIPER CSS -------------------->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!---------------------- CSS FOLDER -------------------->
+    <link rel="stylesheet" href="./css/profile.css" />
+  </head>
+  <body>
+    <!---------------------- Start Of Header -------------------->
+    <header class="header" id="header">
+      <!-------------------- LARGE SCREEN NAVBAR ---------------->
+      <nav class="nav-large-screen nav-container">
+        <!---------- LOGO ---------->
+        <a href="#" class="nav-logo">FableFolio</a>
+        <!---------- MENU ---------->
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="myBooks.html" class="nav-link">My Books </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li>
+            <li class="nav-item">
+              <a href="library.html" class="nav-link"> Discover </a>
+              <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Blog </a>
+            </li>
+          </ul>
+        </div>
+        <!------- RIGHT SIDE ------->
+        <div class="nav-right">
+          <!-- <a href="#" class="nav-link">
+              <i class="ri-user-line"></i>
+              <span>Login</span>
+            </a>
+            <div class="nav-divider"></div> -->
+          <a href="profile.html" class="profile-pic">
+            <img src="./assets/profilePic.png" alt="profile-pic" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-------------------- MEDIUM SCREEN NAVBAR ----------------->
+    <div class="nav-medium-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">My Books </a>
+          </li>
+          <!-- <li class="nav-item">
+              <a href="#" class="nav-link"> Genres </a>
+            </li> -->
+          <li class="nav-item">
+            <a href="library.html" class="nav-link"> Discover</a>
+            <!-- <ul class="discover-dropdown">
+                <div class="discover-dropdown-links">
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Lists</a></li>
+                  <li><a href="#">Explore</a></li>
+                  <li><a href="#">News & Interviews</a></li>
+                </div>
+                <div class="discover-dropdown-favoriteGenres">
+                  <h4>Favorite Genres</h4>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Fiction</a></li>
+                  <li><a href="#">Psychology</a></li>
+                  <li><a href="#">Cookbooks</a></li>
+                  <li><a href="#">Self Help</a></li>
+                  <li><a href="#">All Genres</a></li>
+                </div>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Blog </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------- SMALL SCREEN NAVBAR ------------------>
+    <div class="nav-small-screen">
+      <div class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <i class="ri-home-3-line"></i>
+              <!-- <span>Home</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="myBooks.html" class="nav-link">
+              <i class="ri-bookmark-2-line"></i>
+              <!-- <span>My Books</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-compass-line"></i>
+              <!-- <span>Discover</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="library.html" class="nav-link">
+              <i class="ri-search-line"></i>
+              <!-- <span>Search</span> -->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="ri-menu-line"></i>
+              <!-- <span>More</span> -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!---------------------- End Of Header ---------------------->
+    <main class="main">
+      <div class="author">
+        <div class="author-image">
+          <img src="./assets/authorImage.jfif" alt="Agatha Christie" />
+        </div>
+        <div class="author-info">
+          <h1>Agatha Christie</h1>
+          <p class="about">
+            Agatha Christie (1890–1976) is listed in the Guinness Book of World
+            Records as the bestselling novelist of all time. The first recipient
+            of the Mystery Writers of America’s Grand Master Award, she
+            published eighty mystery novels and many short story collections and
+            created such iconic fictional detectives as Hercule Poirot, Miss
+            Jane Marple, and Tommy and Tuppence Beresford. She is known around
+            the world as the Queen of Crime.
+          </p>
+        </div>
+      </div>
+      <!-------------------- Start Of News Section -------------->
+      <section class="news" id="news">
+        <div style="padding-top: 0" class="news-container container">
+          <div class="news-books swiper">
+            <h1 style="margin: 2rem 0; margin-top: 1rem; font-size: 30px">
+              Books by Agatha Christie
+            </h1>
+            <div class="swiper-wrapper">
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book1.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Murder on the Links</h1>
+                    <h2 class="book-author">Aghatha Cristie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.87</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book2.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">And Then There Were None</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.28</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book3.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Crooked House</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.08</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book4.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Murder at the Vicarage</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>4.05</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book5.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">A Caribbean Mystery</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.84</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book6.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">The Mirror Crack'd from..</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.95</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-books-book-card swiper-slide">
+                <div class="card-content">
+                  <img
+                    src="./assets/authorPage/book7.jpg"
+                    alt="book-image"
+                    class="card-content-image"
+                  />
+                  <div class="card-content-data">
+                    <h1 class="book-title">Sleeping Murder</h1>
+                    <h2 class="book-author">Agatha Christie</h2>
+                    <div class="card-bottom">
+                      <i style="color: #e47b01" class="ri-star-fill"></i>
+                      <span>3.98</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-------------------- End Of News Section ---------->
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">FableFolio</div>
+        <div class="footer-copyright">
+          &copy; 2024 FableFolio. All rights reserved.
+        </div>
+        <div class="footer-social-media">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!---------------------- SWIPER JS -------------------->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
